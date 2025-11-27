@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CNNETWORK | Avinash - Digital God</title>
+    <meta name="description" content="Official Profile of Avinash - Full Stack & Neural Network Developer." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Orbitron:wght@400;500;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --color-neon-cyan: #00FFFF;
+        --color-neon-pink: #FF00AA;
+        --color-dark-bg: #050505;
+        --cursor-size: 20px;
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+        overflow-x: hidden;
+        cursor: none; /* Custom cursor handling */
+        background-color: #000;
+      }
+      a, button, input, textarea, select {
+        cursor: none; /* Ensure custom cursor stays visible */
+      }
+      h1, h2, h3, h4, .font-cyber {
+        font-family: 'Orbitron', sans-serif;
+      }
+      .font-code {
+        font-family: 'JetBrains Mono', monospace;
+      }
+      
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #000;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: var(--color-neon-cyan);
+        border-radius: 3px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #fff;
+        box-shadow: 0 0 10px var(--color-neon-cyan);
+      }
+
+      /* CRT Scanline Effect */
+      .scanlines {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        pointer-events: none;
+        z-index: 9998;
+        background: linear-gradient(
+          to bottom,
+          rgba(255,255,255,0),
+          rgba(255,255,255,0) 50%,
+          rgba(0,0,0,0.1) 50%,
+          rgba(0,0,0,0.1)
+        );
+        background-size: 100% 4px;
+        opacity: 0.15;
+      }
+
+      /* Matrix/Starfield Canvas */
+      canvas.bg-canvas {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        pointer-events: none;
+      }
+      
+      /* Glitch Animations */
+      .glitch-wrapper {
+        position: relative;
+        overflow: hidden;
+      }
+      
+      /* Utilities */
+      .glass-panel {
+        background: rgba(20, 20, 20, 0.6);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+      }
+      .glass-panel-light {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(0, 0, 0, 0.05);
+      }
+      .neon-shadow {
+        box-shadow: 0 0 10px var(--color-neon-cyan), 0 0 20px rgba(0, 255, 255, 0.3);
+      }
+      .text-neon {
+        text-shadow: 0 0 5px var(--color-neon-cyan);
+      }
+      
+      @keyframes spin-slow {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      .animate-spin-slow {
+        animation: spin-slow 8s linear infinite;
+      }
+      
+      /* Selection */
+      ::selection {
+        background: var(--color-neon-cyan);
+        color: #000;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.5.0",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^11.0.0",
+    "canvas-confetti": "https://aistudiocdn.com/canvas-confetti@^1.9.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-black text-white selection:bg-cyan-500 selection:text-black">
+    <div id="root"></div>
+  </body>
+</html>

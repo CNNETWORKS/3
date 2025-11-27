@@ -1,0 +1,9 @@
+{
+  "name": "CNNETWORK - Avinash Ultimate Profile",
+  "description": "The definitive personal profile page for Avinash (CNNETWORK). A cyberpunk-infused, interactive experience featuring 3D visuals, AI chat integration, and deep personal storytelling.",
+  "requestFramePermissions": [
+    "microphone",
+    "camera",
+    "geolocation"
+  ]
+}
